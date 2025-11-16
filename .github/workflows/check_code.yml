@@ -45,10 +45,10 @@ jobs:
         fi
         
         echo "Installing CI tools: ruff and pytest."
-        uv pip install ruff requests
-
+        
     - name: Run Linting (Ruff)
       run: |
+        uv pip install ruff requests
         ruff check .
         ruff format --check . # ตรวจสอบว่าโค้ดถูกจัดรูปแบบตามที่กำหนดหรือไม่
 
