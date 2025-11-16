@@ -49,7 +49,6 @@ jobs:
 
     - name: Run Linting (Ruff)
       run: |
-        source .venv/bin/activate
         ruff check .
         ruff format --check . # ตรวจสอบว่าโค้ดถูกจัดรูปแบบตามที่กำหนดหรือไม่
 
